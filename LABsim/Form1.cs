@@ -154,5 +154,52 @@ namespace LABsim
         {
             textBoxSB.ReadOnly = true;
         }
+
+        private void createButton()
+        {
+            flowLayoutPanel1.Controls.Clear();
+
+            for (int i = 0; i < 4; i++)
+            {
+                Button b = new Button();
+                b.Tag = i;
+                b.Width = 100;
+                b.Height = 30;
+                b.Left = 400;
+                b.Top = 300;
+                b.Parent = this;
+                b.Text = "Кнопка " + i.ToString();
+                b.Name = "Nbutt"+i.ToString();
+                flowLayoutPanel1.Controls.Add(b);
+                b.Click += new EventHandler(NewButton_Click);
+            }
+        }
+
+        private void NewButton_Click(object sender, EventArgs e)
+        {
+            Button btn = (Button)sender;
+
+            for (int i = 0; i < 4; i++)
+            {
+                if (btn.Name == ("Nbutt" + i))
+                {
+
+                    btn.BackColor = System.Drawing.Color.Red;
+
+                    break;
+                }
+            }
+        }
+
+        private void buttonCreate_Click(object sender, EventArgs e)
+        {
+            createButton();
+            
+        }
+
+        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -48,6 +48,8 @@ namespace LABsim
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.textBoxSB = new System.Windows.Forms.TextBox();
+            this.buttonCreate = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -235,11 +237,34 @@ namespace LABsim
             this.textBoxSB.TabIndex = 19;
             this.textBoxSB.TextChanged += new System.EventHandler(this.textBoxSB_TextChanged);
             // 
+            // buttonCreate
+            // 
+            this.buttonCreate.Location = new System.Drawing.Point(583, 223);
+            this.buttonCreate.Name = "buttonCreate";
+            this.buttonCreate.Size = new System.Drawing.Size(192, 29);
+            this.buttonCreate.TabIndex = 20;
+            this.buttonCreate.Text = "Создать новую кнопку";
+            this.buttonCreate.UseVisualStyleBackColor = true;
+            this.buttonCreate.Click += new System.EventHandler(this.buttonCreate_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoSize = true;
+            this.flowLayoutPanel1.BackColor = System.Drawing.Color.LightCyan;
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(430, 230);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(10, 10);
+            this.flowLayoutPanel1.TabIndex = 21;
+            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.buttonCreate);
             this.Controls.Add(this.textBoxSB);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.groupBox1);
@@ -284,6 +309,8 @@ namespace LABsim
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TrackBar trackBar1;
         private System.Windows.Forms.TextBox textBoxSB;
+        private System.Windows.Forms.Button buttonCreate;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
 
