@@ -184,7 +184,7 @@ namespace LABsim
                 if (btn.Name == ("Nbutt" + i))
                 {
 
-                    btn.BackColor = System.Drawing.Color.Red;
+                    btn.BackColor = System.Drawing.Color.Aqua;
 
                     break;
                 }
