@@ -201,5 +201,50 @@ namespace LABsim
         {
 
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Menu", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void toolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Menu", "Предупреждение", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void toolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Разработчик этого всего Железнов Тимофей", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void проверящийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Добрый и хороший чекловек Макеев Григорий", "Информация", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
